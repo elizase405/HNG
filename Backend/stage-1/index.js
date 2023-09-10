@@ -1,4 +1,10 @@
 const express = require('express');
+const moment = require("moment");
+
+const current_day_index = moment().day();
+const weeks = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const day = weeks[current_day_index];
+
 const app = express();
 
 app.use(express.json());
@@ -20,12 +26,11 @@ app.get("/api", (req, res)=>{
 	}
 	else
 	{
-		console.log(req.url);
 		return res.status(200)
 			.json({
 			"slack_name": req.query.slack_name,
-			"current_day": "Monday",
-			"utc_time": "2023-08-21T15:04:05Z",
+			"current_day": day,
+			"utc_time": moment().utc().format(),
 			"track": req.query.track,
 			"github_file_url": "https://github.com/elizase405/hng/blob/master/Backend/stage-1/index.js",
 			"github_repo_url": "https://github.com/elizase405/hng",
@@ -34,6 +39,6 @@ app.get("/api", (req, res)=>{
 	}
 });
 
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT || 3000;
 
-app.listen(PORT, ()=>{console.log(`Server started on port ${5000}`)});
+app.listen(PORT, ()=>{console.log(`Server started on port ${PORT}`)});
