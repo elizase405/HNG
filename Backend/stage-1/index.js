@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
 app.get("/", (req, res)=>{
-	res.send("Go to /api?slack_name=example_name&track=backend");
+	res.send("Go to https://example.com/api?slack_name=example_name&track=backend");
 });
 
 app.get("/api", (req, res)=>{
