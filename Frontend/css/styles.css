@@ -1,0 +1,33 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 80%;
+    margin: 0 auto;
+    background: #ed0f0fa6;
+    font-family: 'Montserrat', sans-serif;
+}
+
+img{
+    height: 400px;
+    width: 400px;
+    padding: 20px 0;
+}
+
+p{
+    font-size: 20px;
+}
+
+a{
+    color: black;
+}
+
+.text{
+    line-height: 1.3em;
+}
+
+.space{
+    margin: 10px 0;
+}
