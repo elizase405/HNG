@@ -27,7 +27,7 @@ app.get("/api", (req, res)=>{
 			"current_day": "Monday",
 			"utc_time": "2023-08-21T15:04:05Z",
 			"track": req.query.track,
-			"github_file_url": "https://github.com/elizase405/hng/blob/main/file_name.ext",
+			"github_file_url": "https://github.com/elizase405/hng/blob/master/Backend/stage-1/index.js",
 			"github_repo_url": "https://github.com/elizase405/hng",
 			"status_code": 200
 		});
