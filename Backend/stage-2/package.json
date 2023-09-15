@@ -1,0 +1,29 @@
+{
+  "dependencies": {
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-async-handler": "^1.2.0",
+    "mongoose": "^7.5.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  },
+  "scripts": {
+    "start": "node server.js",
+    "test": "nodemon server.js"
+  },
+  "name": "stage-2",
+  "version": "1.0.0",
+  "description": "A REST API capable of CRUD operations on a \"person\" resource, interfacing with the mongodb database.",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elizase405/hng.git#master"
+  },
+  "author": "Elizabeth",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/elizase405/hng/issues"
+  },
+  "homepage": "https://github.com/elizase405/hng/tree/master#readme"
+}
