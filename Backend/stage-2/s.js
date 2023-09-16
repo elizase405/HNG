@@ -14,6 +14,13 @@ app.use(express.json());
 app.use(express.urlencoded({extended: false}));
 
 
+// @desc	Get redirect
+// @route	GET /
+// @access	Public
+app.get("/", (req, res) => {
+	res.status(200).send("Go to /api or /api/id_number")
+});
+
 // @desc	Get people
 // @route	GET /api
 // @access	Public
