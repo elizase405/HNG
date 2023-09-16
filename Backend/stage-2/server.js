@@ -7,6 +7,7 @@ const People = require("./models/peopleModel");
 const connectDB = require("./config/db");
 const { errorHandler } = require("./middleware/errorMiddleware.js");
 const app = express();
+
 connectDB();
 
 app.use(express.json());
