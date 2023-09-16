@@ -5,7 +5,7 @@ const port = process.env.port || 3000;
 const asyncHandler = require("express-async-handler");
 const People = require("./models/peopleModel");
 const connectDB = require("./config/db");
-
+const { errorHandler } = require("./middleware/errorMiddleware.js");
 const app = express();
 connectDB();
 
