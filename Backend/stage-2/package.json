@@ -25,5 +25,6 @@
   "bugs": {
     "url": "https://github.com/elizase405/hng/issues"
   },
-  "homepage": "https://github.com/elizase405/hng/tree/master#readme"
+  "homepage": "https://github.com/elizase405/hng/tree/master#readme",
+  "type": "module"
 }
