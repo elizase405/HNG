@@ -83,6 +83,6 @@ app.delete("/api/:id", asyncHandler(async (req, res) => {
 
 app.use(errorHandler);
 
-app.listen(port, ()=>{
+app.listen(port=3000, ()=>{
 	console.log(`server started on port ${port}`);
 });
