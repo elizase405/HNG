@@ -87,6 +87,8 @@ app.delete("/api/:id", asyncHandler(async (req, res) => {
 	res.status(200).json({message: `Person removed for ${req.params.id}`});
 }))
 
+app.use(errorHandler);
+
 app.listen(port, ()=>{
 	console.log(`server started on port ${port}`);
 });
